@@ -33,7 +33,10 @@
     array_push($arrayYears, 2021);
 
     $consultaStock="SELECT idProducto, nombreProducto, descripcion, stock FROM tb_productos WHERE idAdmin = '$idAdmin' AND idStatusProducto = 1";
-    $resultStock=mysqli_query($con,$consultaStock);    
+    $resultStock=mysqli_query($con,$consultaStock);
+    /*
+        Hola adalito pastelito
+    */    
 ?>
 
 <html>
