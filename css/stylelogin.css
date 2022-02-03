@@ -1,0 +1,170 @@
+        .container .card {
+            border: 0;
+        }
+        .container .card-login {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            /*padding: 18px;*/
+            max-width: 25rem;
+            border-radius: 1rem;
+            box-shadow: 0 0.5rem 2rem 0 rgb(0 0 0 / 30%);
+        }
+
+        .container .card-header {
+            color: #fff;
+            /*background: #ff0000;*/
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: 600 !important;
+            margin-top: 10px;
+            border-bottom: 0;
+        }
+
+        .container .card-login .card-body{
+            border-top: 12px solid;             
+            border-image-slice: 1;
+            border-image-source: linear-gradient(to left, #54ACA9, #00556B);            
+            padding: 3rem;            
+        }
+
+        .container .card-login .card-body p{
+            font-size: 10px;
+        }
+
+        .container .input-group-prepend span{
+            width: 50px;
+            background-color: #7CB5B0;
+            color: #fff;
+            border:0 !important;
+        }
+
+        .container input:focus{
+            outline: 0 0 0 0  !important;
+            box-shadow: 0 0 0 0 !important;
+        }
+
+        .container .login_btn{
+            width: 100%;
+            padding: 1rem;
+        }
+
+        .container .login_btn:hover{
+            color: #fff;
+            background-color: #7CB5B0;
+            border-color: #7CB5B0;
+        }
+
+        .container .btn-outline-danger {
+            color: #fff;
+            font-size: 18px;
+            background-color: #23586D;
+            background-image: none;
+            border-color: #23586D;
+            border-radius: 5rem;
+        }
+
+        /*.container .form-control {
+            display: block;
+            width: 100%;
+            height: calc(2.25rem + 2px);
+            padding: 0.375rem 0.75rem;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #7CB5B0;
+            background-color: transparent;
+            background-clip: padding-box;
+            border: 1px solid #7CB5B0;
+            border-radius: 0;
+            background-color: #fff;
+            border: 1px solid #7CB5B0;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }*/
+
+        .container .form-control:focus{
+            color: rgb(46, 78, 143) !important;
+            border-color: #54ACA9 !important;
+            box-shadow: 0 0 0 0.2rem rgb(84 172 169 / 25%) !important;
+            background-color: #FFFFFF;
+        }
+
+        .container .input-group-text {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 0.375rem 0.75rem;
+            margin-bottom: 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.6;
+            color: #23586D;
+            background-color: #fff;
+            border: 1px solid #7CB5B0;
+            text-align: center;
+            white-space: nowrap;
+            border-radius: 0;
+        }
+
+        .container .form-label-group{
+            position: relative;
+            margin-bottom: 1rem;
+        }
+        
+        .container .form-label-group input{
+            border-radius: 2rem;
+            text-align: center;
+            padding-top: 15px;
+            background: #EDEDED;            
+        }
+        .container .form-label-group>label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            margin-bottom: 0;
+            /* Override default `<label>` margin */
+            line-height: 1.5;
+            color: #2E4E8F;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+            transition: all .1s ease-in-out;
+        }
+        .container .form-label-group input:not(:placeholder-shown)~label {
+            font-size: 12px;
+            color: #777;
+        }
+        .container .form-group{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        
+        .container .form-label-group input::-webkit-input-placeholder {
+          color: transparent;
+        }
+
+        .container .form-label-group input:-ms-input-placeholder {
+          color: transparent;
+        }
+
+        .container .form-label-group input::-ms-input-placeholder {
+          color: transparent;
+        }
+
+        .container .form-label-group input::-moz-placeholder {
+          color: transparent;
+        }
+
+        .container .form-label-group input::placeholder {
+          color: transparent;
+        }
+
+        .body-login{
+            background-image: url(../simplePOS/img/fondo_login.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;    
+        }

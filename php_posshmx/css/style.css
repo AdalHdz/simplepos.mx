@@ -1,0 +1,502 @@
+/** HOJA DE ESTILO PARA ALAMAEX *****/
+/*INDICE*/
+/* 1.- FAMILIA DE FUENTES 
+   1.1 TAMAÃ‘OS Y FAMILIAS
+   2.- HEADER
+   2.1 HEADER CINTILLO 
+   2.2 HEADER MENU
+
+    3. CARRUCEL
+
+        3. RESPONSVE CARRUCEL
+            
+
+    4. NOSOTROS
+
+    5.- PRODUCTOS
+
+    6.- CONTACTO
+
+/* 1.- FAMILIA DE FUENTES */
+
+@font-face {
+      font-family: "encabezadosMenu";
+      src: url("../fonts/Titillium Web regular.ttf");
+    }
+
+  @font-face {
+      font-family: "encabezadosH2";
+      src: url("../fonts/Titillium Web 300.ttf");
+    }
+
+  @font-face {
+      font-family: "parrafos";
+      src: url("../fonts/Titillium Web 200.ttf");
+    }
+
+  @font-face {
+      font-family: "encabezadosH3";
+      src: url("../fonts/Titillium Web regular.ttf");
+    }
+
+ @font-face {
+      font-family: "encabezadosH1";
+      src: url("../fonts/Titillium Web regular.ttf");
+    }
+
+header
+{   
+  background-color: #000;
+}
+
+#menumovil{
+        display: none;
+    }
+
+#idMenu{
+    background-color: #000;
+    width: 100%;
+    height: 90px;
+    z-index: 100;
+    vertical-align: middle;
+}
+
+#idMenu .ajuste-logo{
+    width: 100%;
+    margin-top: -11px;
+}
+    
+
+
+#idMenu p{
+    font-size: 50px;
+    color: #fff;
+}
+
+#idMenu h3{
+    font-family: "encabezadosMenu";
+    color: #fff;
+    font-size: 18px;
+    padding: 12px;
+    text-align: center;
+}
+#idMenu .navbar{
+    position: fixed;
+    height: 90px;
+    margin-left: 40px;
+    top: 0;
+}
+
+.fx{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 90px;
+    box-shadow: 5px 0 10px 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 5px 0 10px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 0 10px 5px rgba(0,0,0,0.5);
+    -o-box-shadow: 5px 0 10px 5px rgba(0,0,0,0.5);
+    -ms-box-shadow: 5px 0 10px 5px rgba(0,0,0,0.5);
+}
+
+
+#idMenu .bg-dark {
+  background-color: #000 !important;
+}
+
+#idMenu #logocommerce{
+    top: 10px;
+    float:right; 
+    color: #fff;
+    z-index: 9999;
+}
+
+/*************RESPONSIVE CABECERA****************/
+@media only screen and (max-width: 600px) 
+{
+    #idMenu{
+        text-align: center;
+    }
+    
+    #idMenu .ajuste-logo{
+    width: 45%;
+    }
+    
+    .navbar{
+        display: none;
+    }
+    
+    #idMenu #logocommerce{
+        top: 0px;
+        z-index: 9999;
+    }
+    
+    #menumovil{
+        display: inline;
+    }
+    
+    
+
+} 
+
+@media only screen and (min-width: 601px) and (max-width: 768px)
+{
+    #idMenu{
+        text-align: center;
+    }
+    
+    #idMenu .ajuste-logo{
+        width: 30%;
+        margin-top: -10px;
+    }
+    
+    .navbar{
+        display: none;
+    }
+    
+    #idMenu .logo-comerce{
+        margin-top: 35px;
+        /*margin-left: 560px;*/
+        font-size: 1.5rem;
+    }
+    
+    #menumovil{
+        display: inline;
+    }        
+} 
+
+@media only screen and (min-width: 769px) and (max-width: 1024px)
+{
+    #idMenu{
+        text-align: center;
+    }
+    
+    #idMenu .ajuste-logo{
+        width: 200%;
+        text-align: center;
+        margin-left: 230px;
+    }
+    
+    .navbar{
+        display: none;
+    }
+    
+    #idMenu .logo-comerce{
+        font-size: 1.5rem;
+        margin-left: -80px;
+        margin-top: 13px;
+    }
+
+    #menumovil{
+        display: inline;
+    }
+} 
+
+/**************FIN RESPONSIVE CABECERA************************/
+
+/****************** CONTACTOS *************************/
+#contacto{
+    background-color: #000000;
+    width: 100%;
+    height: fit-content;
+    margin-top: 90px;
+  
+}
+
+#contacto h2{
+    font-family: "encabezadosH2";
+    color: #fff;
+    font-size: 24px;
+    
+}
+
+#contacto p{
+    font-family: "parrafos";
+    color: #fff;
+    font-size: 18px;
+    
+}
+
+#contacto .title-contacto
+{
+    margin-top: 20px;
+}
+
+.form-group{
+   padding: 20px;
+    width 100%;
+}
+
+.separar{
+    margin-top: 15px;
+}
+
+
+/****************** FIN  CONTACTOS *************************/
+
+
+
+
+
+
+
+
+/**************************** FOOTER *******************************/
+.footer{
+background-color: #000;
+    width: 100%;
+    height: fit-content;
+}
+
+.footer a{
+color: #fff;    
+}
+
+.footer p{
+ font-family: "parrafos";
+    color: #fff;
+    font-size: 20px;   
+}
+
+.pie-social{
+    padding-right: 2px
+}
+
+.foter-bg{
+    text-align: center;
+}
+
+
+.foter-bg p{
+    margin-top: 50px;
+    color: #fff;
+    
+}
+
+.footer-pre p{
+    text-align: center;
+}
+
+.footer-pre p{
+
+    color: #fff;
+}
+
+.fot-pre{
+    margin-top: 30px;
+}
+
+.fot-img{
+    padding-right: 8px;
+  
+}
+
+.footer-post p{
+
+    color: #fff;
+}
+
+.boton_sus{
+    padding: 5px;
+   font-size: 15px;
+    color: #0C0001;
+    background-color: #fff;
+    border-radius: 6px;
+    border: 2px solid #000;
+  }
+
+.boton_sus:hover{
+    padding: 5px;
+   font-size: 15px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 6px;
+    border: 2px solid #fff;
+  }
+
+.facefoteer {
+    font-size: 25px;
+}
+
+.facefoteer a{
+    color: #fff;
+}
+
+/******************* FOOTER RESPONSIVE **********************/
+@media only screen and (max-width: 600px)
+{
+    .footer .iconos-footer{
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:768px){
+
+    .footer{
+
+    height: 100%;
+}
+ }
+
+
+
+/*****************************************************************/
+
+/* CLASES AUXILIARES */
+
+.text-centro{
+   text-align: center;   
+}
+
+.text-rigth{
+   text-align: right;   
+}
+
+.text-left{
+   text-align: left;   
+}
+
+
+.img-centro{
+    text-align: center;   
+}
+
+.text-justificado{
+    text-align: justify;
+}
+
+.top-05{
+    margin-top: 5px;
+}
+
+.top-10{
+    margin-top: 10px;
+}
+
+.top-15{
+    margin-top: 15px;
+}
+
+.top-20{
+    margin-top: 20px;
+}
+
+.top--20{
+    margin-top: -20px;
+}
+
+.top-25{
+    margin-top: 25px;
+}
+
+.top-30{
+    margin-top: 30px;
+}
+
+.top-40{
+    margin-top: 40px;
+}
+
+.top-50{
+    margin-top: 50px;
+}
+
+.bottom-30{
+    margin-bottom: 30px;
+}
+
+.bottom-50{
+    margin-bottom: 50px;
+}
+
+.ajuste{
+      width: 100%;
+  }
+
+.ajuste-50{
+      width: 50%;
+  }
+
+.ajuste-80{
+      width: 80%;
+  }
+
+.ajuste-70{
+      width: 70%;
+  }
+
+.pading-5{
+    padding: 5px;
+}
+
+.pading-10{
+    padding: 10px;
+}
+
+.pading-20{
+    padding: 20px;
+}
+
+.linea-blanca{
+    color: #fff;
+background-color: #fff;
+height: 3px;
+}
+
+.linea-negra{
+    color: #000;
+background-color: #000;
+height: 2px;
+}
+
+
+/****************** CINTILLO *************************/
+
+#aviso{
+  
+    width: 100%;
+    height: 100%;
+  
+}
+
+
+/****************** AVISO *************************/
+#aviso{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+  
+}
+
+#aviso h2{
+    font-family: "encabezadosH2";
+    color: #000;
+    font-size: 24px;
+    
+}
+
+#aviso h3{
+    font-family: "encabezadosH3";
+    color: #000;
+    font-size: 24px;
+    
+}
+
+#aviso p{
+     font-family: "parrafos";
+     color: #000;
+    font-size: 18px;
+    
+}
+
+#aviso .title-aviso
+{
+    margin-top: 20px;
+}
+
+#aviso .img-aviso
+{
+    width: 100%;
+}
+

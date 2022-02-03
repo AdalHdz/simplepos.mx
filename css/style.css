@@ -1,0 +1,1070 @@
+/** HOJA DE ESTILO PARA ALAMAEX *****/
+/*INDICE*/
+/* 1.- FAMILIA DE FUENTES 
+   1.1 TAMAÑOS Y FAMILIAS
+   2.- HEADER
+   2.1 HEADER CINTILLO 
+   2.2 HEADER MENU
+
+    3. CARRUCEL
+
+        3. RESPONSVE CARRUCEL
+            
+
+    4. NOSOTROS
+
+    5.- COMO FUNCIONA
+
+    6.- CONTACTO
+
+/* 1.- FAMILIA DE FUENTES */
+
+@font-face {
+      font-family: "encabezadosMenu";
+      src: url("../fonts/Titillium Web regular.ttf");
+    }
+
+  @font-face {
+      font-family: "encabezadosH2";
+      src: url("../fonts/Arvo-Regular.ttf");
+    }
+
+  @font-face {
+      font-family: "parrafos";
+      src: url("../fonts/Quicksand-Regular.ttf");
+    }
+
+  @font-face {
+      font-family: "encabezadosH3";
+      src: url("../fonts/Titillium Web regular.ttf");
+    }
+
+
+
+.header
+{   
+  background-color: #438d8b;
+    height: 100%;
+}
+
+body {
+ background-image: url("../img/web_fondo.jpg");
+ background-color: #cccccc;
+}
+
+
+#idMenu{
+    background-color: #23586D;
+      z-index: 200;
+    position: relative;
+    /*height: 100%;*/
+}
+
+.caption_logo{
+    position: absolute;
+    z-index: 9999;
+    width: 90%;
+    top: -54px;
+}
+.img_logo{
+    width: 100%;
+}
+
+#idMenu p{
+    font-size: 18px;
+    color: #fff;
+}
+
+#idMenu h3{
+     font-family: "encabezadosMenu";
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#idMenu .bg-dark {
+  background-color: #438d8b !important;
+    float: right;
+}
+
+
+@media only screen and (max-width: 600px){
+    .caption_logo{
+        width: 28%;
+        top: -28px;
+    }
+    .img_logo{
+        width: 100%;
+        top: -32px;
+    }
+    #idMenu{
+        background-color: #438d8b;
+        height: 75px;
+    }
+
+    #idMenu .bg-dark {
+      background-color: #438d8b !important;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        float: right;
+    }
+    #idMenu h3{
+        margin-top: 10px;
+    }
+}
+
+/* 3. CARRUCEL */
+
+#carousel{
+   
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Carousel base class */
+
+.carousel {
+  margin-bottom: 0rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+   background-color: rgba(116,169,222,0.5);
+   width: 100%;
+   height: 150px;
+   padding: 10px;
+   z-index: 10;
+  bottom: 0rem;
+}
+
+.carousel-caption b{
+font-size: 85px;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item { 
+  height: 32rem;
+  background-color: #777;
+}
+
+.carousel-item a{
+    text-align: left;
+    color: #fff;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carajuste{
+    width: 97%;
+     height: 20rem;
+    
+}
+
+.carajuste img{
+    width: 100%;
+     height: 100%;
+    
+}
+
+
+
+
+.boton_carucel{
+    font-family: 'Helvetica 35 Ligth';
+font-style: normal;
+font-weight: normal;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 500px;
+    font-weight: 600;
+    font-size: 25px;
+    color: #fff;
+    background-color: #e1134f;
+   
+  
+  }
+
+.boton_carucel:hover{
+   font-family: 'Helvetica 35 Ligth';
+font-style: normal;
+font-weight: normal;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 500px;
+    font-weight: 600;
+    font-size: 25px;
+    color: #fff;
+    background-color: #e1134f;
+    border-radius: 25px;
+   
+  }
+
+/*3. RESPONSIVE CAROCEL*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+    
+    .carousel-item { 
+  height: 10rem;
+
+}
+    
+.carousel-item > img {
+  height: 10rem;
+}
+    
+.carousel-caption {
+
+   height: 150px;
+   padding: 10px;
+   z-index: 10;
+  bottom: 0rem;
+}
+    
+.carousel-caption h1{
+
+font-size: 35px;
+}
+    
+.carousel-caption b{
+font-size: 40px;
+}
+    
+.boton_carucel{
+
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 240px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    background-color: #e1134f;
+   
+  
+  }
+
+.boton_carucel:hover{
+   font-family: 'Helvetica 35 Ligth';
+font-style: normal;
+font-weight: normal;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 100px;
+    font-weight: 600;
+    font-size: 25px;
+    color: #fff;
+    background-color: #e1134f;
+    border-radius: 25px;
+   
+  }
+      
+} 
+/* Extra large devices (phones, 600px and down) */
+@media only screen and (min-width: 1500px) 
+{
+    
+    .carousel-item { 
+  height: 45em;
+
+}
+    
+.carousel-item > img {
+  height: 100%;
+}
+    
+.carousel-caption {
+
+   height: 150px;
+   padding: 10px;
+   z-index: 10;
+  bottom: 0rem;
+}
+    
+.carousel-caption h1{
+
+font-size: 35px;
+}
+    
+.carousel-caption b{
+font-size: 40px;
+}
+    
+.boton_carucel{
+
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 240px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    background-color: #e1134f;
+   
+  
+  }
+
+.boton_carucel:hover{
+   font-family: 'Helvetica 35 Ligth';
+font-style: normal;
+font-weight: normal;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 100px;
+    font-weight: 600;
+    font-size: 25px;
+    color: #fff;
+    background-color: #e1134f;
+    border-radius: 25px;
+   
+  }
+      
+} 
+
+
+
+
+/****************** NOSOTROS *************************/
+
+#nosotros
+{
+  background-image: url("../img/fondos/punto-venta-movil-01.jpg");
+  /* Set a specific height */
+  height: 800px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;    
+    
+}
+
+#nosotros .title-nosotros{
+    background-color: #00576f;
+     height: 100px;
+}
+
+#nosotros .title-nosotros h2{
+    background-color: #00576f;
+     height: 100px;
+}
+
+.texto-nosotros1 p
+{
+    font-size: 25px;
+    color: #fff;
+    
+}
+
+/****************** FIN NOSOTROS *************************/
+
+/****************** COMO FUNCIONA *************************/
+
+.cintillo-como-funciona{
+       background-image: url("../img/fondos/flecha-izquierda.png");
+      background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;    
+     height: 150px;
+    margin-top: -50px; 
+    z-index: 200;
+    position: relative;
+}
+
+.cintillo-como-funciona h2{
+      font-size: 35px;
+    color: #fff;
+}
+
+#como-funciona
+{
+  background-image: url("../img/fondos/punto-venta-movil-03.png");
+  /* Set a specific height */
+  height: 800px;
+
+   /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;   
+    
+    margin-top: -40px;
+        z-index: 9;
+    
+}
+
+
+
+/****************** FIN  COMO FUNCIONA *************************/
+
+/******************* BENEFICIOS ****************************/
+.cintillo-beneficios{
+     background-image: url("../img/fondos/flecha-izquierda.png");
+ 
+      background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;    
+     height: 150px;
+   margin-top: -45px;
+    z-index: 200;
+    position: relative;
+}
+
+.cintillo-beneficios h2{
+      font-size: 35px;
+    color: #fff;
+}
+
+#beneficios
+{
+  background-image: url("../img/fondos/punto-venta-movil-beneficios.png");
+  /* Set a specific height */
+  height: 800px;
+
+   /* Create the parallax scrolling effect */
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;   
+    
+    margin-top: -40px;
+        z-index: 9;
+    
+}
+
+
+/************************** EQUIPOS RECOMENDADOS ************************/
+.cintillo-equipos-recomendado
+{    
+     background-color: #5ab6b2;
+      background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;    
+     height: 70px;
+  
+    z-index: 200;
+    position: relative;
+}
+
+.cintillo-equipos-recomendado h2{
+      font-size: 35px;
+    color: #fff;
+}
+
+#equipos-recomendado{
+
+    
+    height: 100%;
+    opacity: 90%;  
+    
+}
+
+#table-negocios th{
+    
+    color: #fff;
+}
+
+#table-negocios td{
+    background-color:rgba(0,87,111,0.6);
+    color: #fff;
+}
+
+/**************** NEGOCIOS *****************************/
+
+
+.cintillo-negocios{
+     background-image: url("../img/fondos/flecha-izquierda.png");
+ 
+      background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;    
+     height: 150px;
+  
+    z-index: 200;
+    position: relative;
+}
+
+.cintillo-negocios h2{
+      font-size: 35px;
+    color: #fff;
+}
+
+
+
+
+/****************** CONTACTOS *************************/
+#contacto{
+   background-color: #23586D;
+    height: 100%;
+    opacity: 90%;
+}
+
+#contacto h2{
+    font-family: "encabezadosH2";
+    color: #fff;
+    font-size: 24px;
+    
+}
+
+#contacto p{
+    font-family: "parrafos";
+    color: #fff;
+    font-size: 18px;
+    
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #7CB5B0;
+    border-color: #7CB5B0;
+}
+
+#contacto .title-contacto
+{
+    margin-top: 20px;
+}
+
+.form-group{
+   padding: 20px;
+}
+
+.separar{
+    margin-top: 15px;
+}
+
+
+/****************** FIN  CONTACTOS *************************/
+
+/****************** SOPORTE *************************/
+
+#soporte
+{
+  background-image: url("../img/fondos/mesa-ayuda-01.jpg");
+  /* Set a specific height */
+  height: 700px;
+
+   /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;   
+    
+    margin-top: -40px;
+        z-index: 9;
+    
+}
+
+/****************** FIN NOSOTROS *************************/
+
+/***********PRIVACIDAD**************/
+.privacidad{
+    background-color: #7CB5B0;
+    height: 100%;
+    width: 100%;
+}
+.privacidad a{
+color: #fff;    
+}
+
+.privacidad p{
+ font-family: "parrafos";
+    color: #fff;
+    font-size: 18px;   
+}
+
+/**************************** FOOTER *******************************/
+.footer{
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.footer a{
+color: #fff;    
+}
+
+.footer p{
+ font-family: "parrafos";
+    color: #fff;
+    font-size: 18px;   
+}
+
+.pie-social{
+    padding-right: 2px
+}
+
+.foter-bg{
+    text-align: center;
+}
+
+
+.foter-bg p{
+    margin-top: 50px;
+    color: #fff;
+    
+}
+
+.footer-pre p{
+    text-align: center;
+}
+
+.footer-pre p{
+
+    color: #fff;
+}
+
+.fot-pre{
+    margin-top: 30px;
+}
+
+.fot-img{
+    padding-right: 8px;
+  
+}
+
+.footer-post p{
+
+    color: #fff;
+}
+
+.boton_sus{
+    padding: 5px;
+   font-size: 15px;
+    color: #0C0001;
+    background-color: #fff;
+    border-radius: 6px;
+    border: 2px solid #000;
+  }
+
+.boton_sus:hover{
+    padding: 5px;
+   font-size: 15px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 6px;
+    border: 2px solid #fff;
+  }
+
+.facefoteer {
+    font-size: 25px;
+}
+
+.facefoteer a{
+    color: #fff;
+}
+
+/******************* FOOTER RESPONSIVE **********************/
+
+
+@media(max-width:768px){
+
+    .footer{
+
+    height: 100%;
+}
+ }
+
+
+
+/*****************************************************************/
+
+/* CLASES AUXILIARES */
+
+.text-centro{
+   text-align: center;   
+}
+
+.text-rigth{
+   text-align: right;   
+}
+
+.text-left{
+   text-align: left;   
+}
+
+
+.img-centro{
+    text-align: center;   
+}
+
+.text-justificado{
+    text-align: justify;
+}
+
+.top-05{
+    margin-top: 5px;
+}
+
+.top-10{
+    margin-top: 10px;
+}
+
+.top-15{
+    margin-top: 15px;
+}
+
+.top-20{
+    margin-top: 20px;
+}
+
+.top--20{
+    margin-top: -20px;
+}
+
+.top-25{
+    margin-top: 25px;
+}
+
+.top-30{
+    margin-top: 30px;
+}
+
+.top-40{
+    margin-top: 40px;
+}
+
+.top-50{
+    margin-top: 50px;
+}
+
+.top-60{
+    margin-top: 60px;
+}
+
+
+.top-70{
+    margin-top: 70px;
+}
+
+
+.top-80{
+    margin-top: 80px;
+}
+
+
+.bottom-30{
+    margin-bottom: 30px;
+}
+
+.bottom-50{
+    margin-bottom: 50px;
+}
+
+.ajustar-100{
+      width: 100%;
+  }
+
+.ajuste{
+      width: 100%;
+  }
+
+.ajuste-50{
+      width: 50%;
+  }
+
+.ajuste-80{
+      width: 80%;
+  }
+
+.ajuste-70{
+      width: 70%;
+  }
+
+.pading-5{
+    padding: 5px;
+}
+
+.pading-10{
+    padding: 10px;
+}
+
+.pading-20{
+    padding: 20px;
+}
+
+.linea-blanca{
+    color: #fff;
+background-color: #fff;
+height: 3px;
+}
+
+.linea-negra{
+    color: #000;
+background-color: #000;
+height: 2px;
+}
+
+.text-color-white{
+    color: #FFFFFF;
+}
+/******************+ NAV BAR ******************/
+.alinear-nav{
+   right: ;
+   
+}
+
+/****************** SOCIAL ****************/
+
+#social-media{
+    background-color: #e6145b;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 50px;
+      box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 0 10px 5px rgba(0,0,0,0.5);
+    -o-box-shadow: 5px 0 10px 5px rgba(0,0,0,0.5);
+    -ms-box-shadow: 5px 0 10px 5px rgba(0,0,0,0.5);
+    
+}
+
+#social-media .bg-social{
+    width: 100%;
+    height: 100%;
+  
+}
+
+
+#social-media h1{
+   color: #fff;
+  
+}
+
+#social-media h2{
+   color: #fff;
+  
+}
+
+.btn_wapp {
+    position: fixed;
+    top: 20%;
+    right: -120px;
+    z-index: 10;
+    border-radius: 30px 0 0 30px;
+    padding: 10px;
+    background-color: #7CB5B0;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn_wapp:hover {
+  right:0px;
+}
+.big { font-size: 28px; }
+.btn_wapp a {color: white;}
+.btn_wapp i {width: 30px; margin-right:10px;}
+
+@media screen and (max-width: 600px) {
+  .btn_wapp {top:70%;right:0px;width:60px;height:60px;text-align:center;/*border-radius:50px;*/}
+  .btn_wapp i {width:40px; margin:0 auto;}
+  .btn_wapp a span {display:none;}
+	.btn_wapp:hover{right: 0px;}
+}
+
+.span-whats{
+  
+     font-family: "parrafos";
+    color: #fff;
+    font-size: 24px;
+}
+
+.btn_simplepos {
+    position: fixed;
+    top: 30%;
+    right: -133px;
+    z-index: 10;
+    border-radius: 30px 0 0 30px;
+    padding: 10px;
+    background-color: #7CB5B0;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn_simplepos:hover {
+  right:0px;
+}
+.big { font-size: 28px; }
+.btn_simplepos a {color: white;}
+.btn_simplepos i {width: 30px; margin-right:10px; }
+
+@media screen and (max-width: 600px) {
+  .btn_simplepos {top:80%;right:0px;width:60px;height:60px;text-align:center;/*border-radius:50px;*/}
+  .btn_simplepos i {width:40px; margin:0 auto;}
+  .btn_simplepos a span {display:none;}
+	.btn_simplepos:hover{right: 0px;}
+}
+
+.span-simple-pos{
+  
+     font-family: "parrafos";
+    color: #fff;
+    font-size: 24px;
+}
+
+
+/****************** FIN SOCIAL *************/
+
+/**********simplePOSAPK************/
+.img_logo_simplepos{
+    margin-top: 40px;
+}
+
+.tablausuarios{
+            position: relative;
+            margin-top:  50px;
+            text-align: center;
+        }
+        .tablausuarios .title-tbusuarios{
+            text-align: center;
+        }
+
+        table {
+           width: 100%;
+           border: 1px solid #000;
+        }
+        th, td {           
+           text-align: center;
+           vertical-align: top;
+           border-collapse: collapse;
+           padding: 0.3em;
+        }
+
+        th {
+           background: #23586D;
+            color: #fff;
+        }
+        
+        .tablausuarios .iconos-tbusuarios{
+            text-align: center;
+        }
+        .tablausuarios .iconos-tbusuarios a{
+            color: #23586D;
+            margin-top: 10px;            
+        }
+
+
+
+
+.parallax {
+  /* The image used */
+  background-image: url("../img/fondos/como-funciona-1.png");
+
+  /* Set a specific height */
+  height: 800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.card-header {
+    background-color: #438d8b !important;
+    //background-color: rgb(46, 78, 143, 0.8) !important;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.tabla-body {
+    font-size: 12px;
+    background-color: #FFFFFF;
+    color: #054D92;
+    border: 1px solid #dee2e6;
+}
+
+.tbody_fixed{
+    height: 250px;
+    overflow-y: auto;
+    display: inline-block;
+    width: 100%;
+}
+
+.tbody_fixed_productos{
+    max-height: 90vh;
+    overflow-y: auto;
+    display: inline-block;
+    width: 100%;
+}
+
+.tbody_fixed::-webkit-scrollbar{
+    display: none;
+}
+
+.tbody_fixed_productos::-webkit-scrollbar{
+    display: none;
+}
+
+.tbody_fixed_x{
+    overflow: scroll hidden;
+    display: block;
+}
+
+.tbody_fixed th{    
+    top: 0;
+}
+
+.login{
+    background: #ffffff !important;
+}
+
+.body-pantallas{
+    background-image: url(../simplePOS/img/fondo_pantallas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.nav-margins {
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+    padding-top: 0rem !important;
+    padding-right: 0rem !important;
+}
+
+.ml-auto{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.bg-esq{
+    background-color: #7CB5B0 !important;
+}
